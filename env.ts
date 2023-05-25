@@ -11,7 +11,7 @@ const envSchema = z.object({
   PORT: z.number(),
 });
 
-const env: z.infer<typeof envSchema> = {
+export const env: z.infer<typeof envSchema> = {
   API_KEY: process.env.API_KEY!,
   DATABASE_URL: process.env.DATABASE_URL!,
   PORT: parseInt(process.env.PORT as string),

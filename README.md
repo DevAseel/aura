@@ -27,7 +27,7 @@ const envSchema = z.object({
   // specify the schema of your env variables here
 });
 
-const env: z.infer<typeof envSchema> = {
+export const env: z.infer<typeof envSchema> = {
   // import the env variables here
 };
 
@@ -51,7 +51,7 @@ const envSchema = z.object({
   PORT: z.number(),
 });
 
-const env: z.infer<typeof envSchema> = {
+export const env: z.infer<typeof envSchema> = {
   // add '!' for strict types
   API_KEY: process.env.API_KEY!,
   DATABASE_URL: process.env.DATABASE_URL!,
@@ -88,3 +88,15 @@ DATABASE_URL: Invalid url
 ❌ Invalid environment variables:
 API_KEY: Required
 ```
+
+## Usage in developments
+
+To use the environment varaibles, you need to import `env` to your file:
+
+```ts
+import { env } from "./env";
+```
+
+this would allow you to access the env vraibles along with its types:
+
+![env variable usage in development](https://i.ibb.co/n0VZfgs/Screenshot-2023-05-25-at-11-32-06-AM.png)
