@@ -1,4 +1,4 @@
-#### Aura is in Beta, and is not production ready.
+#### Before starting, please note that Aura is currently in beta and is not production-ready.
 
 ## About the Library
 
@@ -63,7 +63,7 @@ validateEnv(envSchema, env);
 
 ## Running validations
 
-To run the validations you can either run the file `env.ts` or include it before application run step in `package.json`:
+To run the validations, you can either run the file `env.ts` or include it before application run step in `package.json`:
 
 ```json
 "start": "node dist/env.js && ..."
