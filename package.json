@@ -1,8 +1,11 @@
 {
-  "name": "kankyo",
-  "version": "0.0.1",
+  "name": "devaseel-aura",
+  "version": "0.0.4",
   "description": "Library for validating environment variables at runtime.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/validate.d.ts",
+  "author": "Aseel Al Rawahi",
+  "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
     "zod": "^3.21.4"
@@ -14,8 +17,6 @@
     "start": "npm run build && node dist/env.js"
   },
   "bin": {
-    "validate": "./dist/env.js"
-  },
-  "author": "Aseel Al Rawahi",
-  "license": "ISC"
+    "validate": "~/dist/env.js"
+  }
 }
