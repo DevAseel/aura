@@ -4,6 +4,8 @@
 
 Aura is a library for validating environment variables at runtime.
 
+[npm package](https://www.npmjs.com/package/devaseel-aura)
+
 ## Installation
 
 To install the library, you need to run the following:
